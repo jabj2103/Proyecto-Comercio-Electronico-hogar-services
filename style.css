@@ -236,9 +236,10 @@ body {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: var(--spacing-xl);
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-xl) var(--spacing-md);
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 600px;
+    width: 100%;
 }
 
 .hero-content {
