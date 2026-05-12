@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHome Solutions - Servicios para tu Hogar</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de Font Awesome para los servicios -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ==================== HEADER/NAVBAR ==================== -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>SmartHome</span>
+                </div>
+
+                <!-- Botón de menú móvil -->
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Menú de navegación -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="#solicitar" class="btn-solicitar nav-link">Solicitar Servicio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Soluciones Inteligentes para tu Hogar</h1>
+            <p class="hero-subtitle">Servicios profesionales y productos de última tecnología para transformar tu casa</p>
+            <button class="btn btn-primary" onclick="document.getElementById('servicios').scrollIntoView({behavior: 'smooth'})">Ver Servicios</button>
+        </div>
+        <div class="hero-image">
+            <div class="hero-illustration">
+                <i class="fas fa-house-circle-check"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE SERVICIOS ==================== -->
+    <section id="servicios" class="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Contamos con profesionales certificados para resolver todas tus necesidades</p>
+            </div>
+
+            <div class="servicios-grid">
+                <!-- Servicio 1: Reparaciones Eléctricas -->
+                <div class="servicio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Reparaciones Eléctricas</h3>
+                    <p>Instalación, mantenimiento y reparación de sistemas eléctricos seguros y confiables</p>
+                    <button class="btn btn-secondary">Contratar</button>
+                </div>
+
+                <!-- Servicio 2: Plomería -->
+                <div class="servicio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Plomería</h3>
+                    <p>Soluciones completas en instalación y reparación de tuberías y sistemas de agua</p>
+                    <button class="btn btn-secondary">Contratar</button>
+                </div>
+
+                <!-- Servicio 3: Cámaras de Seguridad -->
+                <div class="servicio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Instalación de Cámaras</h3>
+                    <p>Sistemas de vigilancia 24/7 con tecnología HD y almacenamiento en la nube</p>
+                    <button class="btn btn-secondary">Contratar</button>
+                </div>
+
+                <!-- Servicio 4: Domótica -->
+                <div class="servicio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Domótica</h3>
+                    <p>Automatización inteligente de tu hogar desde tu dispositivo móvil</p>
+                    <button class="btn btn-secondary">Contratar</button>
+                </div>
+
+                <!-- Servicio 5: Aire Acondicionado -->
+                <div class="servicio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Aire Acondicionado</h3>
+                    <p>Instalación y mantenimiento de sistemas de climatización eficientes</p>
+                    <button class="btn btn-secondary">Contratar</button>
+                </div>
+
+                <!-- Servicio 6: Mantenimiento -->
+                <div class="servicio-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Electrodomésticos</h3>
+                    <p>Reparación y mantenimiento de todos tus electrodomésticos</p>
+                    <button class="btn btn-secondary">Contratar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE PRODUCTOS ==================== -->
+    <section id="productos" class="productos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Productos de Última Tecnología</h2>
+                <p>Equipa tu hogar con la mejor tecnología inteligente disponible</p>
+            </div>
+
+            <div class="productos-grid">
+                <!-- Producto 1: Bombillos Inteligentes -->
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Bombillos Inteligentes</h3>
+                    <p class="producto-desc">LED RGB con control desde tu móvil</p>
+                    <p class="producto-precio">$25.99</p>
+                    <button class="btn btn-secondary">Comprar</button>
+                </div>
+
+                <!-- Producto 2: Cámaras de Seguridad -->
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Cámaras de Seguridad</h3>
+                    <p class="producto-desc">Resolución 4K con visión nocturna</p>
+                    <p class="producto-precio">$129.99</p>
+                    <button class="btn btn-secondary">Comprar</button>
+                </div>
+
+                <!-- Producto 3: Sensores de Movimiento -->
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Sensores de Movimiento</h3>
+                    <p class="producto-desc">Detectores inteligentes para iluminación automática</p>
+                    <p class="producto-precio">$35.99</p>
+                    <button class="btn btn-secondary">Comprar</button>
+                </div>
+
+                <!-- Producto 4: Cerraduras Inteligentes -->
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Cerraduras Inteligentes</h3>
+                    <p class="producto-desc">Control de acceso desde cualquier lugar</p>
+                    <p class="producto-precio">$179.99</p>
+                    <button class="btn btn-secondary">Comprar</button>
+                </div>
+
+                <!-- Producto 5: Enchufes Inteligentes -->
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Enchufes Inteligentes</h3>
+                    <p class="producto-desc">Control de energía y programación automática</p>
+                    <p class="producto-precio">$19.99</p>
+                    <button class="btn btn-secondary">Comprar</button>
+                </div>
+
+                <!-- Producto 6: Kit Domótico Completo -->
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Kit Domótico Completo</h3>
+                    <p class="producto-desc">Paquete integral de automatización del hogar</p>
+                    <p class="producto-precio">$499.99</p>
+                    <button class="btn btn-secondary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN ¿POR QUÉ ELEGIRNOS? ==================== -->
+    <section id="nosotros" class="ventajas">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Somos la mejor opción para tus necesidades de servicios para el hogar</p>
+            </div>
+
+            <div class="ventajas-grid">
+                <!-- Ventaja 1: Técnicos Certificados -->
+                <div class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Técnicos Certificados</h3>
+                    <p>Personal calificado y con años de experiencia en el sector</p>
+                </div>
+
+                <!-- Ventaja 2: Atención Rápida -->
+                <div class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Atención Rápida</h3>
+                    <p>Disponibilidad inmediata y respuesta en menos de 24 horas</p>
+                </div>
+
+                <!-- Ventaja 3: Garantía -->
+                <div class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantía Completa</h3>
+                    <p>Cobertura total en trabajos realizados y productos vendidos</p>
+                </div>
+
+                <!-- Ventaja 4: Soporte 24/7 -->
+                <div class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Equipo de atención al cliente disponible todo el tiempo</p>
+                </div>
+
+                <!-- Ventaja 5: Precios Accesibles -->
+                <div class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Precios Accesibles</h3>
+                    <p>Tarifas competitivas sin comprometer la calidad del servicio</p>
+                </div>
+
+                <!-- Ventaja 6: Transparencia -->
+                <div class="ventaja-card">
+                    <div class="ventaja-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Total Transparencia</h3>
+                    <p>Sin sorpresas en presupuestos, cotizaciones claras y honestas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECCIÓN DE TESTIMONIOS ==================== -->
+    <section class="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo que nuestros clientes dicen</h2>
+                <p>Testimonios reales de clientes satisfechos</p>
+            </div>
+
+            <div class="testimonios-grid">
+                <!-- Testimonio 1 -->
+                <div class="testimonio-card">
+                    <div class="testimonios-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"El servicio fue excepcional. Los técnicos fueron profesionales, puntuales y dejaron mi hogar impecable. Recomiendo ampliamente SmartHome Solutions."</p>
+                    <div class="testimonio-autor">
+                        <div class="avatar">JM</div>
+                        <div class="autor-info">
+                            <p class="autor-nombre">Hamilton Carrasquila</p>
+                            <p class="autor-ciudad">Turbaco, Bolívar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="testimonio-card">
+                    <div class="testimonios-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Instalé el kit domótico completo y mi casa es ahora mucho más segura y eficiente. El soporte técnico fue muy útil durante la configuración no pensé que se atrevieran a meterse al pozón."</p>
+                    <div class="testimonio-autor">
+                        <div class="avatar">MC</div>
+                        <div class="autor-info">
+                            <p class="autor-nombre">Adrián Cabeza</p>
+                            <p class="autor-ciudad">Cartagena, Bolívar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="testimonio-card">
+                    <div class="testimonios-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Necesitaba reparación urgente de la instalación eléctrica y respondieron en pocas horas. Trabajo impecable a precios muy competitivos. ¡Gracias!"</p>
+                    <div class="testimonio-autor">
+                        <div class="avatar">CR</div>
+                        <div class="autor-info">
+                            <p class="autor-nombre">Jesus Ramiréz</p>
+                            <p class="autor-ciudad">Cartagena, Bolívar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonio 4 -->
+                <div class="testimonio-card">
+                    <div class="testimonios-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonio-text">"Adquirí las cámaras de seguridad y quedé sorprendido por la calidad de imagen. El personal fue muy atento explicando cada función del sistema."</p>
+                    <div class="testimonio-autor">
+                        <div class="avatar">LP</div>
+                        <div class="autor-info">
+                            <p class="autor-nombre">Axel Rodríguez</p>
+                            <p class="autor-ciudad">Cartagena, Bolívar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FORMULARIO DE CONTACTO ==================== -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p>Cuéntanos qué necesitas y te proporcionaremos una solución personalizada</p>
+            </div>
+
+            <div class="contacto-container">
+                <form class="contacto-form" id="contactoForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" required placeholder="tu@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="+57 300 123 4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servicio">Servicio requerido</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="electricidad">Reparaciones Eléctricas</option>
+                            <option value="plomeria">Plomería</option>
+                            <option value="camaras">Instalación de Cámaras</option>
+                            <option value="domotica">Domótica</option>
+                            <option value="aire">Aire Acondicionado</option>
+                            <option value="electrodomesticos">Electrodomésticos</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos con detalle qué necesitas..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Enviar Solicitud</button>
+                </form>
+
+                <!-- Información de contacto adicional -->
+                <div class="contacto-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>+57 300 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@smarthome.co</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Piedra de Bolívar, Cartagena, Bolívar</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>24/7 - Disponible siempre</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Información de la empresa -->
+                <div class="footer-section">
+                    <h4>SmartHome Solutions</h4>
+                    <p>Transformamos hogares con tecnología inteligente y servicios profesionales de calidad.</p>
+                </div>
+
+                <!-- Enlaces rápidos -->
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Servicios -->
+                <div class="footer-section">
+                    <h4>Servicios Principales</h4>
+                    <ul>
+                        <li><a href="#servicios">Reparaciones Eléctricas</a></li>
+                        <li><a href="#servicios">Plomería</a></li>
+                        <li><a href="#servicios">Cámaras de Seguridad</a></li>
+                        <li><a href="#servicios">Domótica</a></li>
+                    </ul>
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 SmartHome Solutions. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Aquí no es recomendable usar id='solicitar' en el footer, en su lugar se usa en el botón del navbar -->
+    <div id="solicitar"></div>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
